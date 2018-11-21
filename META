@@ -1,0 +1,4 @@
+name="tppx_showtype"
+description="Show type of expression"
+version="0.1"
+tppx="./tppx_showtype"
