@@ -5,7 +5,7 @@ let newmapper argv =
   {default with
      expr = (fun mapper expr ->
        match expr with
-       | {exp_attributes = [{attr_name = {txt = "showtype"}; attr_payload =  payload}];
+       | {exp_attributes = [{attr_name = {txt = "showtype"}; attr_payload = payload}];
           exp_type} as other ->
             begin
               match payload with
@@ -38,5 +38,5 @@ let newmapper argv =
   }
 
 let () =
-  Tast_mapper.register "tppx_interpret" newmapper
+  Tast_mapper.register "tppx_showtype" newmapper
 
